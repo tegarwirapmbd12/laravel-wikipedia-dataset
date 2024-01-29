@@ -334,65 +334,30 @@
                 <th class="my_jimdel11">Nama</th>
               </tr>
             </thead>
+            <?php $i = 1; ?>
+            @foreach ($indikators as $indikator)
             <tbody>
               <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">1</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Damkar</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Pemadam Kebakaran setahun di kabupaten Semarang</td>
-                <td class="my_jimdel11 wrapped-cell">semakin besar nilainya, semakin banyak kejadian damkar</td>
-                <td class="my_jimdel11 wrapped-cell">penjumlahan</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah</td>
-                <td class="my_jimdel11 wrapped-cell">Kejadian</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">2-Tidak</td>
-                <td class="my_jimdel11 wrapped-cell"></td>
-                <td class="my_jimdel11 wrapped-cell"></td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Penegakan Perda, Ketertiban Umum dan Pemadaman Kebakaran</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">jumlah kejadian damkar</td>
-                <td class="my_jimdel11 wrapped-cell">Kabupaten</td>
-                <td class="my_jimdel11 wrapped-cell">1-Ya</td>
+                <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $indikator->id }}</th>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->nama_indikator }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->konsep }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->definisi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->interpretasi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->metode_rumus_penghitungan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->ukuran }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->satuan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->klasifikasi_penyajian }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->indikator_komposit }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->publikasi_ketersediaan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->nama_indikator_pembangunan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->kegiatan_penghasil }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->kode_kegiatan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->nama_variabel_pembangunan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->level_estimasi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $indikator->dapat_diakses_umum }}</td>
               </tr>
-              <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">2</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penegakan Perda</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penegakan Perda Di Kabupaten Semarang selama setahun</td>
-                <td class="my_jimdel11 wrapped-cell">Semakin besar nilainya, semakin banyak perda yang diaplikasikan</td>
-                <td class="my_jimdel11 wrapped-cell">penjumlahan</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah</td>
-                <td class="my_jimdel11 wrapped-cell">Kejadian</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">2-Tidak</td>
-                <td class="my_jimdel11 wrapped-cell"></td>
-                <td class="my_jimdel11 wrapped-cell"></td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Penegakan Perda, Ketertiban Umum dan Pemadaman Kebakaran</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penegakan Perda</td>
-                <td class="my_jimdel11 wrapped-cell">Kabupaten</td>
-                <td class="my_jimdel11 wrapped-cell">1-Ya</td>
-              </tr>
-              <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">3</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penindakan Ketertiban Umum</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penindakan Ketertiban Umum di Kab Semarang</td>
-                <td class="my_jimdel11 wrapped-cell">Semakin besar nilainya, semakin banyak pelanggaran ketertiban umum</td>
-                <td class="my_jimdel11 wrapped-cell">penjumlahan</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah</td>
-                <td class="my_jimdel11 wrapped-cell">Kejadian</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">2-Tidak</td>
-                <td class="my_jimdel11 wrapped-cell"></td>
-                <td class="my_jimdel11 wrapped-cell"></td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Penegakan Perda, Ketertiban Umum dan Pemadaman Kebakaran</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penindakan Ketertiban Umum</td>
-                <td class="my_jimdel11 wrapped-cell">Kabupaten</td>
-                <td class="my_jimdel11 wrapped-cell">1-Ya</td>
-              </tr>
-
+              <?php $i++; ?>
+                  @endforeach
             </tbody>
           </table>
         </div>
@@ -426,50 +391,25 @@
                 <th class="my_jimdel11">Dapat Diakses Umum</th>
               </tr>
             </thead>
+            <?php $i = 1; ?>
+            @foreach ($variabels as $variabel)
             <tbody>
               <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">1</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Pemadaman Kebakaran (damkar)</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Pemadaman kebakaran (damkar)</td>
-                <td class="my_jimdel11 wrapped-cell">Pemadaman kebakaran adalah tindakan untuk mencegah penyebaran dan pemadamkan api yang tidak diinginkan pada bangunan, kendaraan, hutan, dll.</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
-                <td class="my_jimdel11 wrapped-cell">integer</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">1-Ya</td>
+                <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $variabel->id }}</th>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->nama_variabel }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->alias }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->konsep }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->definisi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->referensi_pemilihan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->referensi_waktu }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->tipe_data }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->klasifikasi_isian }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->aturan_validasi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->kalimat_pertanyaan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $variabel->dapat_diakses_umum }}</td>
               </tr>
-              <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">2</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penegakan Peraturan daerah (Perda)</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Peraturan daerah (Perda)</td>
-                <td class="my_jimdel11 wrapped-cell">Perda adalah peraturan perundang-undangan yang dibentuk oleh DPRD dengan persetujuan bersama Kepala Daerah</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
-                <td class="my_jimdel11 wrapped-cell">integer</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">1-Ya</td>
-              </tr>
-              <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">3</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah penindakan ketertiban umum</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">Ketertiban umum</td>
-                <td class="my_jimdel11 wrapped-cell">Suatu asas dan standard yang dibentuk oleh badan pembuat undang- undang atau oleh pengadilan sebagai suatu dasar atau asas yang penting bagi suatu negara dan semua masyarakat</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
-                <td class="my_jimdel11 wrapped-cell">integer</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">-</td>
-                <td class="my_jimdel11 wrapped-cell">1-Ya</td>
-              </tr>
-
+              <?php $i++; ?>
+                  @endforeach
             </tbody>
           </table>
         </div>

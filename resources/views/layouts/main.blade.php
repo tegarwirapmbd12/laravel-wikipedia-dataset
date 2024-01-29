@@ -16,58 +16,7 @@
       <div id="LayoutGrid1">
 
         {{-- SIDEBAR --}}
-        <div class="col-1">
-          <div class="col-1-padding">
-            <div id="my_sidebarLogo">
-              <img src="{{ asset('images/logobulat.png') }}" id="sidebarLogo" alt="">
-            </div>
-            <div id="my_sidebarText1">
-              <span id="my_jimdel1"><strong>WIKIPEDIA DATASET</strong></span>
-              <span id="my_jimdel4">Kabupaten Semarang</span>
-            </div>
-            <!-- <div id="my_sidebarMenu1">
-              <span><a href="#" class="style2" title="Visit the main page">Front page</a></span>
-              <span><a href="#" class="style2" title="Guides to browsing Jimdelpedia">Front page</a></span>
-              <span><a href="#" class="style2" title="Articles Related to current events">Happenings</a></span>
-              <span><a href="#" class="style2" title="Visit a randonly selected articel">Hit-or-Miss</a></span>
-              <span><a href="#" class="style2" title="Learn about Jimdelpedia">About Jimdelpedia</a></span>
-              <span><a href="#" class="style2" title="How to contact Jimdelpedia">Contact us</a></span>
-            </div> -->
-            <div id="my_sidebarText2">
-              <span id="my_jimdel5"><strong>2021</strong></span>
-            </div>
-            <div id="my_sidebarMenu2">
-              <span><a href="#" class="style2" title="Guidance on how to use and edit Jimdelpedia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti inventore, ex aliquid assumenda totam fuga veritatis, praesentium minima explicabo nobis, pariatur dolorum autem sed aperiam vero quam at harum!</a></span>
-              <br>
-              <span><a href="#" class="style2" title="Learn how to edit Jimdelpedia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corporis, nihil quia rerum aut itaque cupiditate neque, ipsum quae sunt vitae? Accusantium, laboriosam maiores aliquam ea ipsum accusamus saepe eaque!</a></span>
-              <br>
-              <span><a href="#" class="style2" title="About Jimdelpedia assessment">Assessment</a></span>
-              <br>
-              <span><a href="#" class="style2" title="How to contact Jimdelpedia">Get connected</a></span>
-            </div>
-            <div id="my_sidebarText3">
-              <span id="my_jimdel5"><strong>2022</strong></span>
-            </div>
-            <div id="my_sidebarMenu3">
-              <span><a href="#" class="style2" title="What links here">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021</a></span>
-              <span><a href="#" class="style2" title="About system">ms-ind-Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021</a></span>
-              <span><a href="#" class="style2" title="About information">ms-ind-Kompilasi Produk Administrasi Data Kependidikan Kabupaten Semarang 2021</a></span>
-              <span><a href="#" class="style2" title="Jimdelpedia stuff">ms-ind-Kompilasi Produk Administrasi Pegawai Negeri Sipil Pemerintah Kabupaten Semarang 2021</a></span>
-              <span><a href="#" class="style2" title="Jimdelpedia stuff">ms-ind-Laporan Jumlah Pedagang Pasar 2021</a></span>
-              <span><a href="#" class="style2" title="Jimdelpedia stuff">ms-ind-Laporan Keuangan Pemerintah Daerah 2021</a></span>
-            </div>
-            <div id="my_sidebarText4">
-              <span id="my_jimdel5"><strong>2023</strong></span>
-            </div>
-            <div id="my_sidebarMenu4">
-              <span><a href="#" class="style2" title="What links here">Create website</a></span>
-              <span><a href="#" class="style2" title="About system">Comments system</a></span>
-              <span><a href="#" class="style2" title="About information">Jimdelpedia</a></span>
-              <span><a href="#" class="style2" title="Jimdelpedia stuff">Free code</a></span>
-            </div>
-          </div>
-        </div>
-
+        @include('layouts.sidebar')
         {{-- SIDEBAR END --}}
 
         {{-- MAIN CONTENT --}}
@@ -75,86 +24,7 @@
         {{-- MAIN CONTENT END --}}
 
         {{-- PROFIL --}}
-        <div class="col-3">
-            <div class="col-3-padding">
-            <table id="Table1">
-                <tr>
-                <td colspan="2" class="cell0"><p id="my_jimdel22"><span id="my_jimdel23"></span></p></td>
-                </tr>
-                <tr>
-                <td colspan="2" class="cell1"><div id="my_indexImage1">
-                    <img src="{{ asset('images/logo-diskominfo.png') }}" id="indexImage1" alt="">
-                </div>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span id="my_jimdel24">Nama Dinas</span></p>
-                </td>
-                <td class="cell2"><p>Dinas Komunikasi</p>
-                    <p>dan Informatika</p>
-                    <p>Kabupaten Semarang</p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span class="my_jimdel25">Alamat</span></p>
-                </td>
-                <td class="cell2"><p>Jl. Diponegoro No. 14, Gedung D, UNGARAN – 50511</p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span class="my_jimdel25">Telepon</span></p>
-                </td>
-                <td class="cell2"><p>Jl. Diponegoro No. 14, Gedung D, UNGARAN – 50511</p>
-                </td>
-                </tr>
-
-
-
-                <tr>
-                <td class="cell2"><p class="my_jimdel26"><span class="my_jimdel27">Telepon</span></p>
-                </td>
-                <td class="cell2"><p>(024) 76901553</p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p id="my_jimdel28"><span id="my_jimdel29"> </span></p>
-                </td>
-                <td class="cell2"><p>John</p>
-                    <p>(1970-present)</p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span id="my_jimdel30">Children</span></p>
-                </td>
-                <td>5</td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span id="my_jimdel30">Acadamy Awards</span></p>
-                </td>
-                <td class="cell2"><p><a href="#Heading3" class="style2">Table</a></p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span id="my_jimdel31">Genres</span></p>
-                </td>
-                <td class="cell2"><p>Martial art - Action Movies</p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span id="my_jimdel31">Instruments</span></p>
-                </td>
-                <td class="cell2"><p>Guitar - Piano</p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span id="my_jimdel32">Website</span></p>
-                </td>
-                <td class="cell2"><p><a href="https://www.jdmah.com" target="_blank" class="style2">www.jimdelpedia.com</a></p>
-                </td>
-                </tr>
-            </table>
-            </div>
-        </div>
+        {{-- @include('layouts.profil') --}}
         {{-- PROFIL END --}}
 
       </div>

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Indikator22 extends Model
+class Indikator202201 extends Model
 {
     use HasFactory;
 }
