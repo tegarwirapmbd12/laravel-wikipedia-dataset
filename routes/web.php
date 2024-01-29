@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Indikator22Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// 2021
+
+// 2022
+// INDIKATOR
+Route::get('/metadata1-22',[Indikator22Controller::class,'index']);
+// 2023

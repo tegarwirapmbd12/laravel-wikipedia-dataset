@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jimdelpedia.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
+
     </style>
   </head>
   <body>
@@ -65,6 +67,7 @@
             </div>
           </div>
         </div>
+
         {{-- SIDEBAR END --}}
 
         {{-- MAIN CONTENT --}}
@@ -76,7 +79,7 @@
             <div class="col-3-padding">
             <table id="Table1">
                 <tr>
-                <td colspan="2" class="cell0"><p id="my_jimdel22"><span id="my_jimdel23">Jimdelpedia</span></p></td>
+                <td colspan="2" class="cell0"><p id="my_jimdel22"><span id="my_jimdel23"></span></p></td>
                 </tr>
                 <tr>
                 <td colspan="2" class="cell1"><div id="my_indexImage1">
@@ -85,27 +88,36 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="cell2"><p> <span id="my_jimdel24">Born</span></p>
+                <td class="cell2"><p> <span id="my_jimdel24">Nama Dinas</span></p>
                 </td>
-                <td class="cell2"><p>Jimdelpedia</p>
-                    <p>October 1, 1950 (age 72)</p>
-                    <p>Lasemence PHP, U.S.</p>
-                </td>
-                </tr>
-                <tr>
-                <td class="cell2"><p> <span id="my_jimdel25">Occupation</span></p>
-                </td>
-                <td class="cell2"><p>Cinematography - Software developer - martial artist</p>
+                <td class="cell2"><p>Dinas Komunikasi</p>
+                    <p>dan Informatika</p>
+                    <p>Kabupaten Semarang</p>
                 </td>
                 </tr>
                 <tr>
-                <td class="cell2"><p id="my_jimdel26"><span id="my_jimdel27"> </span>Spouse(s)</p>
+                <td class="cell2"><p> <span class="my_jimdel25">Alamat</span></p>
                 </td>
-                <td class="cell2"><p>La Une. <br>Blue.</p>
+                <td class="cell2"><p>Jl. Diponegoro No. 14, Gedung D, UNGARAN – 50511</p>
                 </td>
                 </tr>
                 <tr>
-                <td class="cell2"><p id="my_jimdel28"><span id="my_jimdel29"> </span>Coworker(s)</p>
+                <td class="cell2"><p> <span class="my_jimdel25">Telepon</span></p>
+                </td>
+                <td class="cell2"><p>Jl. Diponegoro No. 14, Gedung D, UNGARAN – 50511</p>
+                </td>
+                </tr>
+
+
+
+                <tr>
+                <td class="cell2"><p class="my_jimdel26"><span class="my_jimdel27">Telepon</span></p>
+                </td>
+                <td class="cell2"><p>(024) 76901553</p>
+                </td>
+                </tr>
+                <tr>
+                <td class="cell2"><p id="my_jimdel28"><span id="my_jimdel29"> </span></p>
                 </td>
                 <td class="cell2"><p>John</p>
                     <p>(1970-present)</p>
@@ -170,5 +182,6 @@
       </div>
     </div>
         <script src="{{ asset('js/script.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

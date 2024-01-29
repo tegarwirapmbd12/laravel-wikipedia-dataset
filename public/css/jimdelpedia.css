@@ -315,7 +315,7 @@ body{
 
     background-image: none;
 
-    border: 0px solid: #ffffff;
+    border: 0px solid #ffffff;
 
     border-radius: 0px;
 
@@ -355,7 +355,7 @@ body{
 
     background-image: none;
 
-    border: 0px solid: #ffffff;
+    border: 0px solid #ffffff;
 
     border-radius: 0px;
 
@@ -403,7 +403,7 @@ body{
 
 
 
-  @@media (max-width: 480px)
+  @media (max-width: 480px)
 
   {
 
@@ -417,7 +417,7 @@ body{
 
 
 
-  #my_Heading1{
+  .my_Heading1{
 
     background-color: transparent;
 
@@ -439,7 +439,7 @@ body{
 
 
 
-  #Heading1{
+  .Heading1{
 
     color: #000000;
 
@@ -1411,7 +1411,7 @@ body{
 
 
 
-  #my_jimdel19{
+  .my_jimdel19{
 
     color: #000000;
 
@@ -1701,7 +1701,7 @@ body{
 
 
 
-  #my_jimdel18{
+  .my_jimdel18{
 
     color: #000000;
 
@@ -1757,7 +1757,7 @@ body{
 
 
 
-  #my_jimdel19{
+  .my_jimdel19{
 
     color: #000000;
 
@@ -1834,7 +1834,7 @@ body{
 
 
 
-  #my_jimdel11{
+  .my_jimdel11{
 
     color: #000000;
 
@@ -1971,7 +1971,7 @@ body{
 
 
 
-  #my_Heading1_4{
+  .my_Heading1_4{
 
     display: inline-block;
 
@@ -1991,7 +1991,7 @@ body{
 
 
 
-  #my_jimdel25{
+  .my_jimdel25{
 
     color: #000000;
 
@@ -2059,7 +2059,7 @@ body{
 
 
 
-  #my_jimdel26{
+  .my_jimdel26{
 
     color: #000000;
 
@@ -2125,7 +2125,7 @@ body{
 
 
 
-  #my_jimdel27{
+  .my_jimdel27{
 
     color: #000000;
 
@@ -2292,7 +2292,7 @@ body{
 
 
 
-  #my_jimdel18{
+  .my_jimdel18{
 
     color: #000000;
 
@@ -2528,7 +2528,7 @@ body{
 
 
 
-  #my_Heading1_4{
+  .my_Heading1_4{
 
     background-color: transparent;
 
@@ -2552,7 +2552,7 @@ body{
 
 
 
-  #Heading1_4{
+  .Heading1_4{
 
     color: #000000;
 
@@ -2572,7 +2572,7 @@ body{
 
 
 
-  #my_Text1_4{
+  .my_Text1_4{
 
     background-color: transparent;
 
@@ -2592,7 +2592,7 @@ body{
 
 
 
-  #my_Text1_4 div{
+  .my_Text1_4 div{
 
     text-align: left;
 
@@ -2600,7 +2600,7 @@ body{
 
 
 
-  #my_Text1_4{
+  .my_Text1_4{
 
     display: block;
 
