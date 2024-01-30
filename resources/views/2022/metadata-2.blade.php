@@ -3,7 +3,7 @@
 @section('content')
 <div class="col-2">
     <div id="my_contentHeading1">
-      <h1 id="my_contentHeading1">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021</h1>
+      <h1 id="my_contentHeading1">Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021</h1>
     </div>
     <hr id="indexLine1">
     {{-- <div id="my_textIntro">
@@ -77,14 +77,14 @@
       <h3 class="Heading1_4">1.1 Instansi Penyelenggara</h3>
     </div>
     <div class="my_Text1_4">
-      <span class="my_jimdel11">SATPOL PP DAN DAMKAR KAB SEMARANG
+      <span class="my_jimdel11">Dinas Pemberdayaan Perempuan, Perlindungan Anak dan Keluarga Berencana Kab. Semarang
       </span>
     </div>
     <div class="my_Heading1_4" id="alamat_lengkap_instansi_penyelenggara">
       <h3 class="Heading1_4">1.2 Alamat Lengkap Instansi Penyelenggara</h3>
     </div>
     <div class="my_Text1_4">
-      <span class="my_jimdel11">Jl. Brigjen Sudiarto No 34 Ungaran, Telepon : 0246921026, Email : satpolkabsemarang@gmail.com, Faksimile : 0246921026
+      <span class="my_jimdel11">Jl. Ki Sarono Mangun Pranoto No. 55 Ungaran, Telepon : 0246923366, Email : -, Faksimile : -
       </span>
     </div>
     {{-- BAB 1 END --}}
@@ -103,7 +103,8 @@
     </div>
     <div class="my_Text1_4">
       <label class="my_jimdel11 col-sm-1">Eselon 2</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">Kepala Satpol PP & Damkar Kab Semarang
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">Kepala Dinas Pemberdayaan Perempuan, Perlindungan Anak dan Keluarga
+        Berencana Kab. Semarang
     </span>
     </div>
     <div class="my_Heading1_4" id="penanggung_jawab_teknis">
@@ -111,23 +112,23 @@
     </div>
     <div class="my_Text1_4">
         <label class="my_jimdel11 col-sm-1">Jabatan</label>
-        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">Kasubag Umpeg</span>
+        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">Kepala Bidang Keluarga Berencana</span>
     </div>
     <div class="my_Text1_4">
         <label class="my_jimdel11 col-sm-1">Alamat</label>
-        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">Jl. Brigjen Sudiarto No 34 Ungaran</span>
+        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">JJl. Ki Sarono Mangun Pranoto No. 55 Ungaran</span>
     </div>
     <div class="my_Text1_4">
         <label class="my_jimdel11 col-sm-1">Telepon</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">0246921026</span>
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">0246923366</span>
     </div>
     <div class="my_Text1_4">
       <label class="my_jimdel11 col-sm-1">Faksimile</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">0246921026</span>
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">-</span>
     </div>
     <div class="my_Text1_4">
       <label class="my_jimdel11 col-sm-1">Email</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">satpolkabsemarang@gmail.com</span>
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">-</span>
     </div>
     {{-- BAB 2 END --}}
 
@@ -141,7 +142,8 @@
     </div>
     <div class="my_Text1_4">
       <span class="my_jimdel11" style="margin: 0 10px"></span>
-      <span class="my_jimdel11">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang
+      <span class="my_jimdel11">Mewujudkan keluarga bahagia dengan melakukan pengaturan jarak kelahiran ideal, diperlukan
+        adanya data pasangan usia subur beserta alat kontrasepsi yang digunakan
       </span>
     </div>
     {{-- <div class="my_Text1_4">
@@ -157,7 +159,8 @@
     </div>
     <div class="my_Text1_4">
         <span class="my_jimdel11" style="margin: 0 10px"></span>
-        <span class="my_jimdel11">Memberikan informasi kejadian penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang kepada masyarakat.
+        <span class="my_jimdel11">mengatur usia ideal ibu melahirkan dan mengatur jarak kelahiran anak
+
         </span>
     </div>
     {{-- <div class="my_Text1_4">
@@ -202,14 +205,14 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">1</th>
                 <td class="my_jimdel11 wrapped-cell">Perencanaan Kegiatan</td>
-                <td class="my_jimdel11 wrapped-cell">04-01-2021</td>
-                <td class="my_jimdel11 wrapped-cell">29-01-2021</td>
+                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
+                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">2</th>
                 <td class="my_jimdel11 wrapped-cell">Desain</td>
-                <td class="my_jimdel11 wrapped-cell">04-01-2021</td>
-                <td class="my_jimdel11 wrapped-cell">29-01-2021</td>
+                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
+                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell">B</th>
@@ -218,7 +221,7 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">3</th>
                 <td class="my_jimdel11 wrapped-cell">Pengumpulan Data</td>
-                <td class="my_jimdel11 wrapped-cell">04-01-2021</td>
+                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
                 <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
               </tr>
               <tr>
@@ -228,7 +231,7 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">4</th>
                 <td class="my_jimdel11 wrapped-cell">Pengolahan Data</td>
-                <td class="my_jimdel11 wrapped-cell">25-01-2021</td>
+                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
                 <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
               </tr>
               <tr>
@@ -244,14 +247,14 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">6</th>
                 <td class="my_jimdel11 wrapped-cell">Diseminasi Hasil</td>
-                <td class="my_jimdel11 wrapped-cell">01-01-2022</td>
-                <td class="my_jimdel11 wrapped-cell">31-01-2022</td>
+                <td class="my_jimdel11 wrapped-cell">01-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">7</th>
                 <td class="my_jimdel11 wrapped-cell">Evaluasi</td>
-                <td class="my_jimdel11 wrapped-cell">01-01-2022</td>
-                <td class="my_jimdel11 wrapped-cell">31-01-2022</td>
+                <td class="my_jimdel11 wrapped-cell">01-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
               </tr>
             </tbody>
           </table>
@@ -274,24 +277,24 @@
             <tbody>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">1</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Pemadaman Kebakaran (damkar)</td>
-                <td class="my_jimdel11 wrapped-cell">Pemadaman kebakaran (damkar)</td>
-                <td class="my_jimdel11 wrapped-cell">Pemadaman kebakaran adalah tindakan untuk mencegah penyebaran dan pemadamkan api yang tidak diinginkan pada bangunan, kendaraan, hutan, dll.</td>
-                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
+                <td class="my_jimdel11 wrapped-cell">Pasangan Usia Subur (PUS)</td>
+                <td class="my_jimdel11 wrapped-cell">Pasangan laki-laki dan perempuan yang menikah</td>
+                <td class="my_jimdel11 wrapped-cell">Pasangan laki-laki perempuan yang istrinya berumur 15-49 tahun atau pasangan suami istri berumur kurang dari 15 tahun dan sudah haid atau istri berumur 15 tahun tetapi masih haid (datang bulan)</td>
+                <td class="my_jimdel11 wrapped-cell">bulanan</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">2</th>
-                <td class="my_jimdel11 wrapped-cell">Jumlah Penegakan Peraturan daerah (Perda)</td>
-                <td class="my_jimdel11 wrapped-cell">Peraturan daerah (Perda)</td>
-                <td class="my_jimdel11 wrapped-cell">Perda adalah peraturan perundang-undangan yang dibentuk oleh DPRD dengan persetujuan bersama Kepala Daerah</td>
-                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
+                <td class="my_jimdel11 wrapped-cell">Peserta KB aktif menurut alat kontrasepsi</td>
+                <td class="my_jimdel11 wrapped-cell">alat kontrasepsi IUD, MO, kondom, implan, suntik, pil</td>
+                <td class="my_jimdel11 wrapped-cell">pasangan usia subur yang sedang menggunakan alat kontrasepsi modern</td>
+                <td class="my_jimdel11 wrapped-cell">bulanan</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">3</th>
-                <td class="my_jimdel11 wrapped-cell">jumlah penindakan ketertiban umum</td>
-                <td class="my_jimdel11 wrapped-cell">ketertiban umum</td>
-                <td class="my_jimdel11 wrapped-cell">suatu asas dan standard yang dibentuk oleh badan pembuat undang- undang atau oleh pengadilan sebagai suatu dasar atau asas yang penting bagi suatu negara dan semua         masyarakat</td>
-                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
+                <td class="my_jimdel11 wrapped-cell">Peserta KB baru menurut alat kontrasepsi</td>
+                <td class="my_jimdel11 wrapped-cell">kontrasepsi IUD, MO, kondom, implan, suntik, pil</td>
+                <td class="my_jimdel11 wrapped-cell">pasangan usia subur yang pertama kali menggunakan alat kontrasepsi modern atau pasca melahirkan menggunakan alat kontrasepsi</td>
+                <td class="my_jimdel11 wrapped-cell">bulanan</td>
               </tr>
             </tbody>
           </table>
@@ -335,26 +338,26 @@
               </tr>
             </thead>
             <?php $i = 1; ?>
-            @foreach ($indikators as $indikator)
+            @foreach ($metadatas as $metadata)
             <tbody>
               <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $indikator->id }}</th>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->nama_indikator }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->konsep }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->definisi }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->interpretasi }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->metode_rumus_penghitungan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->ukuran }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->satuan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->klasifikasi_penyajian }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->indikator_komposit }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->publikasi_ketersediaan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->nama_indikator_pembangunan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->kegiatan_penghasil }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->kode_kegiatan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->nama_variabel_pembangunan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->level_estimasi }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $indikator->dapat_diakses_umum }}</td>
+                <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $metadata->id }}</th>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_indikator }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->konsep_indikator }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->definisi_indikator }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->interpretasi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->metode_rumus_penghitungan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->ukuran }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->satuan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->klasifikasi_penyajian }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->indikator_komposit }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->publikasi_ketersediaan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_indikator_pembangunan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->kegiatan_penghasil }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->kode_kegiatan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_variabel_pembangunan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->level_estimasi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->dapat_diakses_umum_indikator }}</td>
               </tr>
               <?php $i++; ?>
                   @endforeach
@@ -392,21 +395,21 @@
               </tr>
             </thead>
             <?php $i = 1; ?>
-            @foreach ($variabels as $variabel)
+            @foreach ($metadatas as $metadata)
             <tbody>
               <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $variabel->id }}</th>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->nama_variabel }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->alias }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->konsep }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->definisi }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->referensi_pemilihan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->referensi_waktu }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->tipe_data }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->klasifikasi_isian }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->aturan_validasi }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->kalimat_pertanyaan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $variabel->dapat_diakses_umum }}</td>
+                <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $metadata->id }}</th>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_variabel }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->alias }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->konsep_variabel }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->definisi_variabel }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->referensi_pemilihan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->referensi_waktu }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->tipe_data }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->klasifikasi_isian }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->aturan_validasi }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->kalimat_pertanyaan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->dapat_diakses_umum_variabel }}</td>
               </tr>
               <?php $i++; ?>
                   @endforeach
@@ -428,6 +431,7 @@
 
       <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $file->file_indikator) }}" target="_blank">indikator</a>
       </span>
+
       <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $file->file_variabel) }}" target="_blank">Variabel</a><br></span>
       @endforeach
     </div>

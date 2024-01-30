@@ -38,13 +38,11 @@
         <span id="my_jimdel5"><strong>2022</strong></span>
       </div>
       <div id="my_sidebarMenu3">
-        <span><a href="/metadata1-22" class="style2" title="umlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021</a></span>
+        <span><a href="/metadata1-22" class="style2" title="Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021</a></span>
         <br>
-        <span><a href="#" class="style2" title="About system">ms-ind-Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021</a></span>
-        <span><a href="#" class="style2" title="About information">ms-ind-Kompilasi Produk Administrasi Data Kependidikan Kabupaten Semarang 2021</a></span>
-        <span><a href="#" class="style2" title="Jimdelpedia stuff">ms-ind-Kompilasi Produk Administrasi Pegawai Negeri Sipil Pemerintah Kabupaten Semarang 2021</a></span>
-        <span><a href="#" class="style2" title="Jimdelpedia stuff">ms-ind-Laporan Jumlah Pedagang Pasar 2021</a></span>
-        <span><a href="#" class="style2" title="Jimdelpedia stuff">ms-ind-Laporan Keuangan Pemerintah Daerah 2021</a></span>
+        <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021</a></span>
+        <br>
+
       </div>
       {{-- 2022 END --}}
 
