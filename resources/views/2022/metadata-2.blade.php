@@ -3,7 +3,7 @@
 @section('content')
 <div class="col-2">
     <div id="my_contentHeading1">
-      <h1 id="my_contentHeading1">Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021</h1>
+      <h1 id="my_contentHeading1">{{ $metadatas[0]->judul_kegiatan }}</h1>
     </div>
     <hr id="indexLine1">
     {{-- <div id="my_textIntro">
@@ -54,9 +54,9 @@
               <li>
                 <span class="toc_number">3.3</span><a href="#rencana_jadwal_kegiatan" class="style2">Rencana Jadwal Kegiatan</a>
               </li>
-              <li>
+              {{-- <li>
                 <span class="toc_number">3.4</span><a href="#variabel_yang_dikumpulkan" class="style2">Variabel (Karakteristik) yang Dikumpulkan</a>
-              </li>
+              </li> --}}
             </ul>
          </li>
          <li>
@@ -77,14 +77,14 @@
       <h3 class="Heading1_4">1.1 Instansi Penyelenggara</h3>
     </div>
     <div class="my_Text1_4">
-      <span class="my_jimdel11">Dinas Pemberdayaan Perempuan, Perlindungan Anak dan Keluarga Berencana Kab. Semarang
+      <span class="my_jimdel11">{{ $metadatas[0]->instansi }}
       </span>
     </div>
     <div class="my_Heading1_4" id="alamat_lengkap_instansi_penyelenggara">
       <h3 class="Heading1_4">1.2 Alamat Lengkap Instansi Penyelenggara</h3>
     </div>
     <div class="my_Text1_4">
-      <span class="my_jimdel11">Jl. Ki Sarono Mangun Pranoto No. 55 Ungaran, Telepon : 0246923366, Email : -, Faksimile : -
+      <span class="my_jimdel11">{{ $metadatas[0]->alamat }}
       </span>
     </div>
     {{-- BAB 1 END --}}
@@ -99,12 +99,11 @@
     </div>
     <div class="my_Text1_4">
       <label class="my_jimdel11 col-sm-1">Eselon 1</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">-</span>
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">{{ $metadatas[0]->eselon_1 }}</span>
     </div>
     <div class="my_Text1_4">
       <label class="my_jimdel11 col-sm-1">Eselon 2</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">Kepala Dinas Pemberdayaan Perempuan, Perlindungan Anak dan Keluarga
-        Berencana Kab. Semarang
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">{{ $metadatas[0]->eselon_2 }}
     </span>
     </div>
     <div class="my_Heading1_4" id="penanggung_jawab_teknis">
@@ -112,23 +111,23 @@
     </div>
     <div class="my_Text1_4">
         <label class="my_jimdel11 col-sm-1">Jabatan</label>
-        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">Kepala Bidang Keluarga Berencana</span>
+        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">{{ $metadatas[0]->jabatan }}</span>
     </div>
     <div class="my_Text1_4">
         <label class="my_jimdel11 col-sm-1">Alamat</label>
-        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">JJl. Ki Sarono Mangun Pranoto No. 55 Ungaran</span>
+        <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">{{ $metadatas[0]->alamat }}</span>
     </div>
     <div class="my_Text1_4">
         <label class="my_jimdel11 col-sm-1">Telepon</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">0246923366</span>
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">{{ $metadatas[0]->telepon }}</span>
     </div>
     <div class="my_Text1_4">
       <label class="my_jimdel11 col-sm-1">Faksimile</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">-</span>
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">{{ $metadatas[0]->faksimile }}</span>
     </div>
     <div class="my_Text1_4">
       <label class="my_jimdel11 col-sm-1">Email</label>
-      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">-</span>
+      <span class="my_jimdel11" style="margin: 0 10px">:</span><span class="my_jimdel11">{{ $metadatas[0]->email }}</span>
     </div>
     {{-- BAB 2 END --}}
 
@@ -140,39 +139,56 @@
     <div class="my_Heading1_4" id="latar_belakang_kegiatan">
       <h3 class="Heading1_4">3.1 Latar Belakang Kegiatan</h3>
     </div>
-    <div class="my_Text1_4">
+    {{-- Latar belakang hanya 1 --}}
+    {{-- <div class="my_Text1_4">
       <span class="my_jimdel11" style="margin: 0 10px"></span>
-      <span class="my_jimdel11">Mewujudkan keluarga bahagia dengan melakukan pengaturan jarak kelahiran ideal, diperlukan
-        adanya data pasangan usia subur beserta alat kontrasepsi yang digunakan
+      <span class="my_jimdel11">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang
+      </span>
+    </div> --}}
+    {{-- Latar belakang lebih dari 1 --}}
+    <div class="my_Text1_4">
+      <span class="my_jimdel11" style="margin: 0 10px">-</span>
+      <span class="my_jimdel11">sebagai perwujudan dari salah satu fungsi BKD Kab. Semarang sebagaimana diatur dalam Perbup
+        No. 8 tahun 2019 tentang Perubahan atas Peraturan Bupati Semarang No. 52 th 2016 tentang
+        Kedudukan, Susunan Organisasi, Tugas dan Fungsi, Tata Kerja, dan Perincian Tugas Perangkat
+        Daerah Kab. Semarang.
+
       </span>
     </div>
-    {{-- <div class="my_Text1_4">
+    <div class="my_Text1_4">
       <span class="my_jimdel11" style="margin: 0 10px">-</span>
-      <span class="my_jimdel11"> kebutuhan informasi mengenai kepegawaian untuk memenuhi kebutuhan unsur pimpinan instansi
+      <span class="my_jimdel11">kebutuhan informasi mengenai kepegawaian untuk memenuhi kebutuhan unsur pimpinan instansi
         di lingkungan pemerintah Kab. Semarang dan juga untuk mendukung kebutuhan data oleh kalangan
         umum dan stakeholder, sehingga dapat meningkatkan layanan administratif dan pembinaan sumber
         daya aparatur PNS.
+
       </span>
-    </div> --}}
+    </div>
     <div class="my_Heading1_4" id="tujuan_kegiatan">
       <h3 class="Heading1_4">3.2 Tujuan Kegiatan</h3>
     </div>
+    {{-- tujuan kegiatan hanya 1 --}}
     <div class="my_Text1_4">
         <span class="my_jimdel11" style="margin: 0 10px"></span>
-        <span class="my_jimdel11">mengatur usia ideal ibu melahirkan dan mengatur jarak kelahiran anak
-
+        <span class="my_jimdel11">Memberikan informasi kejadian penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang kepada masyarakat.
         </span>
     </div>
-    {{-- <div class="my_Text1_4">
+    {{-- tujuan kegiatan lebih dari 1 --}}
+    <div class="my_Text1_4">
+        <span class="my_jimdel11" style="margin: 0 10px">1</span>
+        <span class="my_jimdel11">Mengkompilasi data kepegawaian yang ada di 46 Perangkat Daerah di lingkungan Pemerintah
+            Kabupaten Semarang, sehingga menjadi satu kesatuan informasi data.
+        </span>
+    </div>
+    <div class="my_Text1_4">
         <span class="my_jimdel11" style="margin: 0 10px">2</span>
-        <span class="my_jimdel11">. Menyajikan informasi data kepegawaian, sehingga dapat diperoleh gambaran/keadaan umum
-            kepegawaian khususnya Pegawai Negeri Sipil di
-            Kabupaten Semarang.
+        <span class="my_jimdel11">Menyajikan informasi data kepegawaian, sehingga dapat diperoleh gambaran/keadaan umum
+            kepegawaian khususnya Pegawai Negeri Sipil di Kabupaten Semarang
         </span>
     </div>
     <div class="my_Text1_4">
         <span class="my_jimdel11" style="margin: 0 10px">3</span>
-        <span class="my_jimdel11">. Menyajikan informasi data kepegawaian, sebagai bahan guna memenuhi
+        <span class="my_jimdel11">Menyajikan informasi data kepegawaian, sebagai bahan guna memenuhi
             kebutuhan unsur pimpinan dalam rangka perencanaan pembinaan pegawai
             serta keperluan dan kebutuhan lainnya.
         </span>
@@ -183,7 +199,7 @@
             dimanfaatkan sebagai bahan penyusunan kebijakan kepegawaian di
             Pemerintah Kabupaten Semarang.
         </span>
-    </div> --}}
+    </div>
     <div class="my_Heading1_4" id="rencana_jadwal_kegiatan">
         <h3 class="Heading1_4">3.3 Rencana Jadwal Kegiatan</h3>
     </div>
@@ -205,14 +221,14 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">1</th>
                 <td class="my_jimdel11 wrapped-cell">Perencanaan Kegiatan</td>
-                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
-                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->perencanaan_kegiatan_awal }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->perencanaan_kegiatan_akhir }}</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">2</th>
                 <td class="my_jimdel11 wrapped-cell">Desain</td>
-                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
-                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->desain_awal }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->desain_akhir }}</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell">B</th>
@@ -221,8 +237,8 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">3</th>
                 <td class="my_jimdel11 wrapped-cell">Pengumpulan Data</td>
-                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
-                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->pengumpulan_data_awal }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->pengumpulan_data_akhir }}</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell">C</th>
@@ -231,8 +247,8 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">4</th>
                 <td class="my_jimdel11 wrapped-cell">Pengolahan Data</td>
-                <td class="my_jimdel11 wrapped-cell">01-01-2021</td>
-                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->pengolahan_data_awal }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->pengolahan_data_akhir }}</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell">D</th>
@@ -241,26 +257,26 @@
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">5</th>
                 <td class="my_jimdel11 wrapped-cell">Analisis</td>
-                <td class="my_jimdel11 wrapped-cell">01-12-2021</td>
-                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->analisis_awal }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->analisis_akhir }}</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">6</th>
                 <td class="my_jimdel11 wrapped-cell">Diseminasi Hasil</td>
-                <td class="my_jimdel11 wrapped-cell">01-12-2021</td>
-                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->diseminasi_hasil_awal }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->diseminasi_hasil_akhir }}</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">7</th>
                 <td class="my_jimdel11 wrapped-cell">Evaluasi</td>
-                <td class="my_jimdel11 wrapped-cell">01-12-2021</td>
-                <td class="my_jimdel11 wrapped-cell">31-12-2021</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->evaluasi_awal }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadatas[0]->evaluasi_akhir }}</td>
               </tr>
             </tbody>
           </table>
     </div>
 
-    <div class="my_Heading1_4" id="variabel_yang_dikumpulkan">
+    {{-- <div class="my_Heading1_4" id="variabel_yang_dikumpulkan">
         <h3 class="Heading1_4">3.4 Variabel (Karakteristik) yang Dikumpulkan</h3>
     </div>
     <div class="my_Text1_4">
@@ -277,28 +293,28 @@
             <tbody>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">1</th>
-                <td class="my_jimdel11 wrapped-cell">Pasangan Usia Subur (PUS)</td>
-                <td class="my_jimdel11 wrapped-cell">Pasangan laki-laki dan perempuan yang menikah</td>
-                <td class="my_jimdel11 wrapped-cell">Pasangan laki-laki perempuan yang istrinya berumur 15-49 tahun atau pasangan suami istri berumur kurang dari 15 tahun dan sudah haid atau istri berumur 15 tahun tetapi masih haid (datang bulan)</td>
-                <td class="my_jimdel11 wrapped-cell">bulanan</td>
+                <td class="my_jimdel11 wrapped-cell">Jumlah Kejadian Pemadaman Kebakaran (damkar)</td>
+                <td class="my_jimdel11 wrapped-cell">Pemadaman kebakaran (damkar)</td>
+                <td class="my_jimdel11 wrapped-cell">Pemadaman kebakaran adalah tindakan untuk mencegah penyebaran dan pemadamkan api yang tidak diinginkan pada bangunan, kendaraan, hutan, dll.</td>
+                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">2</th>
-                <td class="my_jimdel11 wrapped-cell">Peserta KB aktif menurut alat kontrasepsi</td>
-                <td class="my_jimdel11 wrapped-cell">alat kontrasepsi IUD, MO, kondom, implan, suntik, pil</td>
-                <td class="my_jimdel11 wrapped-cell">pasangan usia subur yang sedang menggunakan alat kontrasepsi modern</td>
-                <td class="my_jimdel11 wrapped-cell">bulanan</td>
+                <td class="my_jimdel11 wrapped-cell">Jumlah Penegakan Peraturan daerah (Perda)</td>
+                <td class="my_jimdel11 wrapped-cell">Peraturan daerah (Perda)</td>
+                <td class="my_jimdel11 wrapped-cell">Perda adalah peraturan perundang-undangan yang dibentuk oleh DPRD dengan persetujuan bersama Kepala Daerah</td>
+                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
               </tr>
               <tr>
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">3</th>
-                <td class="my_jimdel11 wrapped-cell">Peserta KB baru menurut alat kontrasepsi</td>
-                <td class="my_jimdel11 wrapped-cell">kontrasepsi IUD, MO, kondom, implan, suntik, pil</td>
-                <td class="my_jimdel11 wrapped-cell">pasangan usia subur yang pertama kali menggunakan alat kontrasepsi modern atau pasca melahirkan menggunakan alat kontrasepsi</td>
-                <td class="my_jimdel11 wrapped-cell">bulanan</td>
+                <td class="my_jimdel11 wrapped-cell">jumlah penindakan ketertiban umum</td>
+                <td class="my_jimdel11 wrapped-cell">ketertiban umum</td>
+                <td class="my_jimdel11 wrapped-cell">suatu asas dan standard yang dibentuk oleh badan pembuat undang- undang atau oleh pengadilan sebagai suatu dasar atau asas yang penting bagi suatu negara dan semua         masyarakat</td>
+                <td class="my_jimdel11 wrapped-cell">1 tahun</td>
               </tr>
             </tbody>
           </table>
-    </div>
+    </div> --}}
     {{-- BAB 3 END --}}
 
     {{-- BAB 4 --}}
@@ -341,23 +357,106 @@
             @foreach ($metadatas as $metadata)
             <tbody>
               <tr>
+                @if ($metadata->id !== null)
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $metadata->id }}</th>
-                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_indikator }}</td>
+                @else
+                @endif
+
+                @if ($metadata->nama_indikator !== null)
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $metadata->nama_indikator }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->konsep_indikator !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->konsep_indikator }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->definisi_indikator !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->definisi_indikator }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->inperpretasi !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->interpretasi }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->metode_rumus_penghitungan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->metode_rumus_penghitungan }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->ukuran !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->ukuran }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->satuan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->satuan }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->klasifikasi_penyajian !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->klasifikasi_penyajian }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->indikator_komposit !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->indikator_komposit }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->publikasi_ketersediaan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->publikasi_ketersediaan }}</td>
-                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_indikator_pembangunan }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->nama_indikator_pembangunan !== null)
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_metadata_pembangunan }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->kegiatan_penghasil !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->kegiatan_penghasil }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->kode_kegiatan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->kode_kegiatan }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->nama_variabel_pembangunan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_variabel_pembangunan }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->level_estimasi !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->level_estimasi }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
+
+                @if ($metadata->dapat_diakses_umum_indikator !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->dapat_diakses_umum_indikator }}</td>
+                @else
+                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+                @endif
               </tr>
               <?php $i++; ?>
                   @endforeach
@@ -372,9 +471,6 @@
         <h2 class="Heading1">Variabel</h2>
       </div>
       <hr id="Line1">
-      {{-- <div class="my_Heading1_4">
-        <h3 class="Heading1_4">3.1 Latar Belakang</h3>
-      </div> --}}
     <div class="my_Text1_4 bg-light">
         <div class="table-responsive mt-5">
         <table class="table table-bordered table-sm" width="100%">
@@ -398,18 +494,75 @@
             @foreach ($metadatas as $metadata)
             <tbody>
               <tr>
-                <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $metadata->id }}</th>
+                @if ($metadata->nama_variabel !== null)
+                <th class="my_jimdel11 wrapped-cell">{{ $metadata->id }}</th>
+                @else
+                @endif
+
+
+                @if ($metadata->nama_variabel !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_variabel }}</td>
+                @else
+                @endif
+
+                @if ($metadata->alias !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->alias }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->konsep_variabel !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->konsep_variabel }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->definisi_variabel !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->definisi_variabel }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->referensi_pemilihan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->referensi_pemilihan }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->referensi_waktu !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->referensi_waktu }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->tipe_data !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->tipe_data }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->klasifikasi_isian !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->klasifikasi_isian }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->aturan_validasi !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->aturan_validasi }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->kalimat_pertanyaan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->kalimat_pertanyaan }}</td>
+                @else
+                @endif
+
+
+                @if ($metadata->dapat_diakses_umum_variabel !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->dapat_diakses_umum_variabel }}</td>
+                @else
+                @endif
               </tr>
               <?php $i++; ?>
                   @endforeach
@@ -425,15 +578,14 @@
     <hr id="line4">
     <div id="my_Text4">
 
-      @foreach($files as $file)
-      <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $file->file_kegiatan) }}" target="_blank">Kegiatan</a>
+      {{-- @foreach($variabels as $variabel) --}}
+      <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $metadatas[0]->file_kegiatan) }}" target="_blank">Kegiatan</a>
       </span>
 
-      <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $file->file_indikator) }}" target="_blank">indikator</a>
+      <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $metadatas[0]->file_indikator) }}" target="_blank">indikator</a>
       </span>
-
-      <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $file->file_variabel) }}" target="_blank">Variabel</a><br></span>
-      @endforeach
+      <span class="my_jimdel18"><strong>•</strong></span><span class="my_jimdel19"><a href="{{ asset('storage/' . $metadatas[0]->file_variabel) }}" target="_blank">Variabel</a><br></span>
+      {{-- @endforeach --}}
     </div>
   </div>
   @endsection

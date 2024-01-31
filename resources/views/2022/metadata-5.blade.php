@@ -139,21 +139,26 @@
     <div class="my_Heading1_4" id="latar_belakang_kegiatan">
       <h3 class="Heading1_4">3.1 Latar Belakang Kegiatan</h3>
     </div>
+
     {{-- Latar belakang hanya 1 --}}
+    @if( $metadatas->count() == 1 )
     <div class="my_Text1_4">
       <span class="my_jimdel11" style="margin: 0 10px"></span>
-      <span class="my_jimdel11">data hanya 1
-    </div>
-    {{-- Latar belakang lebih dari 1 --}}
-    <div class="my_Text1_4">
-      <span class="my_jimdel11" style="margin: 0 10px">-</span>
-      <span class="my_jimdel11">sebagai perwujudan dari salah satu fungsi BKD Kab. Semarang sebagaimana diatur dalam Perbup
-        No. 8 tahun 2019 tentang Perubahan atas Peraturan Bupati Semarang No. 52 th 2016 tentang
-        Kedudukan, Susunan Organisasi, Tugas dan Fungsi, Tata Kerja, dan Perincian Tugas Perangkat
-        Daerah Kab. Semarang.
-
+      <span class="my_jimdel11">{{ $metadatas[0]->latar_belakang }}
       </span>
     </div>
+
+    @elseif($metadatas->latar_belakang->count() > 1)
+    @foreach($metadatas as $metadata)
+    <div class="my_Text1_4">
+      <span class="my_jimdel11" style="margin: 0 10px">{{ $metadata->id }}</span>
+      <span class="my_jimdel11">{{ $metadata->latar_belakang }}
+      </span>
+    @endforeach
+
+    @else
+    @endif
+    {{-- </div>
     <div class="my_Text1_4">
       <span class="my_jimdel11" style="margin: 0 10px">-</span>
       <span class="my_jimdel11">kebutuhan informasi mengenai kepegawaian untuk memenuhi kebutuhan unsur pimpinan instansi
@@ -162,7 +167,7 @@
         daya aparatur PNS.
 
       </span>
-    </div>
+    </div> --}}
     <div class="my_Heading1_4" id="tujuan_kegiatan">
       <h3 class="Heading1_4">3.2 Tujuan Kegiatan</h3>
     </div>
