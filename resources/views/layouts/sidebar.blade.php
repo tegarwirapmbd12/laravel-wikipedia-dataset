@@ -6,7 +6,7 @@
         </div>
         </a>
       <div id="my_sidebarText1">
-            <span id="my_jimdel1"><strong>WIKIPEDIA DATASET</strong></span>
+            <span id="my_jimdel1"><strong>METADATA DATASET</strong></span>
             <span id="my_jimdel4">Kabupaten Semarang</span>
       </div>
       <!-- <div id="my_sidebarMenu1">
@@ -19,7 +19,7 @@
       </div> -->
 
       {{-- 2021 --}}
-      <div id="my_sidebarText2">
+      {{-- <div id="my_sidebarText2">
         <span id="my_jimdel5"><strong>2021</strong></span>
       </div>
       <div id="my_sidebarMenu2">
@@ -30,24 +30,34 @@
         <span><a href="#" class="style2" title="About Jimdelpedia assessment">Assessment</a></span>
         <br>
         <span><a href="#" class="style2" title="How to contact Jimdelpedia">Get connected</a></span>
-      </div>
+      </div> --}}
       {{-- 2021 END --}}
 
       {{-- 2022 --}}
       <div id="my_sidebarText3">
-        <span id="my_jimdel5"><strong>2022</strong></span>
+        <span id="my_jimdel5"><strong>KEGIATAN</strong></span>
       </div>
       <div id="my_sidebarMenu3">
         <span><a href="/metadata1-22" class="style2" title="Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang 2021</a></span>
         <br>
         <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021</a></span>
         <br>
+        <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">Kompilasi Produk Administrasi Data Kependidikan Kabupaten Semarang</a></span>
+        <br>
+        <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">Kompilasi Produk Administrasi Pegawai Negeri Sipil Pemerintah Kabupaten Semarang 2021</a></span>
+        <br>
+        <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">Laporan Jumlah Pedagang Pasar</a></span>
+        <br>
+        <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">Laporan Keuangan Pemerintah Daerah 2021</a></span>
+        <br>
+        <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">MONITORING EVALUASI DAN PELAPORAN KEBENCANAAN KABUPATEN SEMARANG 2021</a></span>
+        <br>
 
       </div>
       {{-- 2022 END --}}
 
       {{-- 2023 --}}
-      <div id="my_sidebarText4">
+      {{-- <div id="my_sidebarText4">
         <span id="my_jimdel5"><strong>2023</strong></span>
       </div>
       <div id="my_sidebarMenu4">
@@ -55,7 +65,7 @@
         <span><a href="#" class="style2" title="About system">Comments system</a></span>
         <span><a href="#" class="style2" title="About information">Jimdelpedia</a></span>
         <span><a href="#" class="style2" title="Jimdelpedia stuff">Free code</a></span>
-      </div>
+      </div> --}}
       {{-- 2023 END --}}
     </div>
   </div>

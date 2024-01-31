@@ -24,7 +24,7 @@
         {{-- MAIN CONTENT END --}}
 
         {{-- PROFIL --}}
-        {{-- @include('layouts.profil') --}}
+        @include('layouts.profil')
         {{-- PROFIL END --}}
 
       </div>

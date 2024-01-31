@@ -8,7 +8,7 @@ use App\Models\Variabel202201;
 use Illuminate\Http\Request;
 
 
-class Indikator202201Controller extends Controller
+class Metadata202201Controller extends Controller
 {
     public function  index(Request $request)
     {

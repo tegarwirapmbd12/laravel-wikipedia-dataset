@@ -4207,9 +4207,9 @@ body{
     color: blue;
     cursor: pointer
   }
-    #my_sidebarMenu3  {
+    /* #my_sidebarMenu3  {
     display: none;
-  }
+  } */
     #my_sidebarMenu4  {
     display: none;
   }
