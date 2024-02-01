@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+Route::get('/coba-coba', function () {
+    return view('coba-coba');
+});
 // 2021
 
 // 2022

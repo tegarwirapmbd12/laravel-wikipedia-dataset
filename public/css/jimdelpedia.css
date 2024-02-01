@@ -136,7 +136,7 @@ body{
 
 
 
-  #my_contentHeading1{
+  .my_contentHeading1{
 
     background-color: transparent;
 
@@ -155,6 +155,10 @@ body{
     padding: 0;
 
     text-align: left;
+
+    font-family: Times New Roman;
+
+    font-weight: lighter;
 
   }
 
@@ -929,7 +933,7 @@ body{
 
 
 
-  #my_textIntro{
+  .my_textIntro{
 
     background-color: transparent;
 
@@ -949,13 +953,13 @@ body{
 
 
 
-  #my_textIntro div{
+  .my_textIntro div{
 
     text-align: left;
 
   }
 
-  #my_textIntro{
+  .my_textIntro{
 
     display: block;
 
@@ -1423,7 +1427,7 @@ body{
 
 
 
-  #my_Heading2{
+  .my_Heading2{
 
     display: inline-block;
 
@@ -1655,13 +1659,15 @@ body{
 
 
 
-  #my_jimdel7{
+  .my_jimdel7{
 
     color: #000000;
 
     font-family: "Arial";
 
-    font-size: 13px;
+    font-size: 0.875rem;
+
+    line-height: 1.5;
 
   }
 
@@ -2194,7 +2200,7 @@ body{
 
 
 
-  #my_contentHeading1{
+  .my_contentHeading1{
 
     display: inline-block;
 
@@ -3092,7 +3098,7 @@ body{
 
   }
 
-  #my_Heading2
+  .my_Heading2
 
   {
 
@@ -3108,7 +3114,7 @@ body{
 
      vertical-align: top;
 
-     margin: 25px 0px 0px 0px;
+     margin: 5px 0px 0px 0px;
 
      padding: 0;
 
@@ -3116,13 +3122,13 @@ body{
 
   }
 
-  #Heading2
+  .Heading2
 
   {
 
      color: #000000;
 
-     font-family: Arial;
+     font-family: Times New Roman;
 
      font-weight: bold;
 
@@ -3133,6 +3139,8 @@ body{
      margin: 0;
 
      text-align: left;
+
+     font-weight: lighter;
 
   }
 
@@ -4213,3 +4221,24 @@ body{
     #my_sidebarMenu4  {
     display: none;
   }
+
+
+
+
+  .my_textIntro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Gaya daftar dengan bullet */
+.my_textIntro ul {
+    position: relative;
+    padding-left: 20px; /* Jarak antara bullet dan teks */
+}
+
+.my_textIntro li::before {
+    content: '\2022'; /* Karakter bullet (titik hitam kecil) */
+    position: absolute;
+    left: 0;
+}

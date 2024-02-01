@@ -157,4 +157,5 @@ class Metadata201Controller extends Controller
         return view('2022.metadata-25', compact('metadatas'));
     }
 
+
 }
