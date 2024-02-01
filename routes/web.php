@@ -1,30 +1,6 @@
 <?php
 
 use App\Http\Controllers\Metadata201Controller;
-use App\Http\Controllers\Metadata202Controller;
-use App\Http\Controllers\Metadata203Controller;
-use App\Http\Controllers\Metadata204Controller;
-use App\Http\Controllers\Metadata205Controller;
-use App\Http\Controllers\Metadata206Controller;
-use App\Http\Controllers\Metadata207Controller;
-use App\Http\Controllers\Metadata208Controller;
-use App\Http\Controllers\Metadata209Controller;
-use App\Http\Controllers\Metadata210Controller;
-use App\Http\Controllers\Metadata211Controller;
-use App\Http\Controllers\Metadata212Controller;
-use App\Http\Controllers\Metadata213Controller;
-use App\Http\Controllers\Metadata214Controller;
-use App\Http\Controllers\Metadata215Controller;
-use App\Http\Controllers\Metadata216Controller;
-use App\Http\Controllers\Metadata217Controller;
-use App\Http\Controllers\Metadata218Controller;
-use App\Http\Controllers\Metadata219Controller;
-use App\Http\Controllers\Metadata220Controller;
-use App\Http\Controllers\Metadata221Controller;
-use App\Http\Controllers\Metadata222Controller;
-use App\Http\Controllers\Metadata223Controller;
-use App\Http\Controllers\Metadata224Controller;
-use App\Http\Controllers\Metadata225Controller;
 use Illuminate\Support\Facades\Route;
 
 /*

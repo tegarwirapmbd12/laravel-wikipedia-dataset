@@ -141,12 +141,28 @@
     </div>
 
     {{-- Latar belakang hanya 1 --}}
-    @if( $metadatas->count() == 1 )
+    @if( $metadatas->count() == 1 || $metadatas->count() > 1 && $metadatas->whereNotNull('latar_belakang')->count() == 1)
     <div class="my_Text1_4">
       <span class="my_jimdel11" style="margin: 0 10px"></span>
       <span class="my_jimdel11">{{ $metadatas[0]->latar_belakang }}
       </span>
     </div>
+    {{-- PERCOBAAN ELSE IF NULL --}}
+    @elseif($metadatas->count() > 1)
+    @foreach($metadatas as $metadata)
+    @if($metadata->latar_belakang !== null)
+    <div class="my_Text1_4">
+      <span class="my_jimdel11" style="margin: 0 10px">{{ $metadata->id }}</span>
+      <span class="my_jimdel11">{{ $metadata->latar_belakang }}
+      </span>
+    </div>
+    @else
+    @endif
+    @endforeach
+    @else
+
+    @endif
+    {{-- PERCOBAAN ELSE IF NULL END --}}
 
     {{-- ELSE IF BERHASIL --}}
     {{-- @elseif($metadatas->count() > 1)
@@ -162,70 +178,37 @@
     @endif --}}
     {{-- ELSE IF BERHASIL END --}}
 
+
+
+    <div class="my_Heading1_4" id="tujuan_kegiatan">
+      <h3 class="Heading1_4">3.2 Tujuan Kegiatan</h3>
+    </div>
+    {{-- tujuan kegiatan hanya 1 --}}
+    @if( $metadatas->count() == 1 || $metadatas->count() > 1 && $metadatas->whereNotNull('tujuan_kegiatan')->count() == 1)
+    <div class="my_Text1_4">
+      <span class="my_jimdel11" style="margin: 0 10px"></span>
+      <span class="my_jimdel11">{{ $metadatas[0]->tujuan_kegiatan }}
+      </span>
+    </div>
     {{-- PERCOBAAN ELSE IF NULL --}}
     @elseif($metadatas->count() > 1)
     @foreach($metadatas as $metadata)
-    @if($metadata->konsep_indikator !== null)
+    @if($metadata->tujuan_kegiatan !== null)
     <div class="my_Text1_4">
       <span class="my_jimdel11" style="margin: 0 10px">{{ $metadata->id }}</span>
-      <span class="my_jimdel11">{{ $metadata->latar_belakang }}
+      <span class="my_jimdel11">{{ $metadata->tujuan_kegiatan }}
       </span>
     </div>
     @else
     @endif
     @endforeach
-
     @else
 
     @endif
-    {{-- PERCOBAAN ELSE IF NULL END --}}
 
-    {{-- </div>
-    <div class="my_Text1_4">
-      <span class="my_jimdel11" style="margin: 0 10px">-</span>
-      <span class="my_jimdel11">kebutuhan informasi mengenai kepegawaian untuk memenuhi kebutuhan unsur pimpinan instansi
-        di lingkungan pemerintah Kab. Semarang dan juga untuk mendukung kebutuhan data oleh kalangan
-        umum dan stakeholder, sehingga dapat meningkatkan layanan administratif dan pembinaan sumber
-        daya aparatur PNS.
 
-      </span>
-    </div> --}}
-    <div class="my_Heading1_4" id="tujuan_kegiatan">
-      <h3 class="Heading1_4">3.2 Tujuan Kegiatan</h3>
-    </div>
-    {{-- tujuan kegiatan hanya 1 --}}
-    <div class="my_Text1_4">
-        <span class="my_jimdel11" style="margin: 0 10px"></span>
-        <span class="my_jimdel11">Memberikan informasi kejadian penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang kepada masyarakat.
-        </span>
-    </div>
-    {{-- tujuan kegiatan lebih dari 1 --}}
-    <div class="my_Text1_4">
-        <span class="my_jimdel11" style="margin: 0 10px">1</span>
-        <span class="my_jimdel11">Mengkompilasi data kepegawaian yang ada di 46 Perangkat Daerah di lingkungan Pemerintah
-            Kabupaten Semarang, sehingga menjadi satu kesatuan informasi data.
-        </span>
-    </div>
-    <div class="my_Text1_4">
-        <span class="my_jimdel11" style="margin: 0 10px">2</span>
-        <span class="my_jimdel11">Menyajikan informasi data kepegawaian, sehingga dapat diperoleh gambaran/keadaan umum
-            kepegawaian khususnya Pegawai Negeri Sipil di Kabupaten Semarang
-        </span>
-    </div>
-    <div class="my_Text1_4">
-        <span class="my_jimdel11" style="margin: 0 10px">3</span>
-        <span class="my_jimdel11">Menyajikan informasi data kepegawaian, sebagai bahan guna memenuhi
-            kebutuhan unsur pimpinan dalam rangka perencanaan pembinaan pegawai
-            serta keperluan dan kebutuhan lainnya.
-        </span>
-    </div>
-    <div class="my_Text1_4">
-        <span class="my_jimdel11" style="margin: 0 10px">4</span>
-        <span class="my_jimdel11">Secara bertahap dan berjangka panjang menyiapkan data dasar yang dapat
-            dimanfaatkan sebagai bahan penyusunan kebijakan kepegawaian di
-            Pemerintah Kabupaten Semarang.
-        </span>
-    </div>
+
+
     <div class="my_Heading1_4" id="rencana_jadwal_kegiatan">
         <h3 class="Heading1_4">3.3 Rencana Jadwal Kegiatan</h3>
     </div>
@@ -383,7 +366,7 @@
             @foreach ($metadatas as $metadata)
             <tbody>
               <tr>
-                @if ($metadata->id !== null)
+                @if ($metadata->nama_indikator !== null)
                 <th class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $metadata->id }}</th>
                 @else
                 @endif
@@ -391,97 +374,97 @@
                 @if ($metadata->nama_indikator !== null)
                 <td class="my_jimdel11 wrapped-cell" style="text-align: center">{{ $metadata->nama_indikator }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->konsep_indikator !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->konsep_indikator }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->definisi_indikator !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->definisi_indikator }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
-                @if ($metadata->inperpretasi !== null)
+                @if ($metadata->interpretasi !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->interpretasi }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->metode_rumus_penghitungan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->metode_rumus_penghitungan }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->ukuran !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->ukuran }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->satuan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->satuan }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->klasifikasi_penyajian !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->klasifikasi_penyajian }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->indikator_komposit !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->indikator_komposit }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->publikasi_ketersediaan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->publikasi_ketersediaan }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->nama_indikator_pembangunan !== null)
-                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_metadata_pembangunan }}</td>
+                <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_indikator_pembangunan }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->kegiatan_penghasil !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->kegiatan_penghasil }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->kode_kegiatan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->kode_kegiatan }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->nama_variabel_pembangunan !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->nama_variabel_pembangunan }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->level_estimasi !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->level_estimasi }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
 
                 @if ($metadata->dapat_diakses_umum_indikator !== null)
                 <td class="my_jimdel11 wrapped-cell">{{ $metadata->dapat_diakses_umum_indikator }}</td>
                 @else
-                <td class="my_jimdel11 wrapped-cell" style="text-align: center">-</td>
+
                 @endif
               </tr>
               <?php $i++; ?>

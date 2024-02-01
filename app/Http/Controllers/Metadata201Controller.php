@@ -76,6 +76,11 @@ class Metadata201Controller extends Controller
         $metadatas = Metadata209::all();
         return view('2022.metadata-9', compact('metadatas'));
     }
+    public function index10(Request $request)
+    {
+        $metadatas = Metadata210::all();
+        return view('2022.metadata-10', compact('metadatas'));
+    }
     public function index11(Request $request)
     {
         $metadatas = Metadata211::all();
