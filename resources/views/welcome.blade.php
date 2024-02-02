@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jimdelpedia.css') }}">
+    @foreach($kegiatans as $kegiatan)
     <style>
+        #list-kegiatan{{ $kegiatan->id }}  {
+            display: none;
+        }
+        #daftar-kegiatan{{ $kegiatan->id }} {
+            color: blue;
+            cursor: pointer
+        }
+        #daftar-kegiatan{{ $kegiatan->id }}:hover {
+            text-decoration: underline;
+        }
+
+        #duasatu{{ $kegiatan->id }}:hover {
+            text-decoration: underline;
+        }
+        #duadua{{ $kegiatan->id }}:hover {
+            text-decoration: underline;
+        }
+        #duatiga{{ $kegiatan->id }}:hover {
+            text-decoration: underline;
+        }
+
     </style>
+    @endforeach
   </head>
   <body>
     <div  id="my_LayoutGrid1">
@@ -63,153 +86,26 @@
             <span class="my_jimdel7">(Source : Wikipedia)
             </span>
           </div>
-
           <div id="my_toc_container">
             <div id="toc_container">
               <div class="toc_title">Kegiatan</div>
               <ul class="toc_list">
+                @foreach($kegiatans as $kegiatan)
                 <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan" onclick="toggleList()">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang</span>
-                   <ul class="list-group" id="list-kegiatan">
+                  <span class="style2" id="daftar-kegiatan{{ $kegiatan->id }}" onclick="toggleList{{ $kegiatan->id }}()">{{ $kegiatan->kegiatan }}</span>
+                   <ul class="list-group" id="list-kegiatan{{ $kegiatan->id }}">
                      <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu">2021</a>
+                       <a href="/{{ $kegiatan->{'2021'} }}" class="style2" id="duasatu{{ $kegiatan->id }}">2021</a>
                      </li>
                      <li>
-                       <a href="/metadata201" class="style2" id="duadua">2022</a>
+                       <a href="/{{ $kegiatan->{'2022'} }}" class="style2" id="duadua{{ $kegiatan->id }}">2022</a>
                      </li>
                      <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga">2023</a>
+                       <a href="/{{ $kegiatan->{'2023'} }}" class="style2" id="duatiga{{ $kegiatan->id }}">2023</a>
                      </li>
                    </ul>
                 </li>
-
-
-                <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan2" onclick="toggleList2()">Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern</span>
-                   <ul class="list-group" id="list-kegiatan2">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu2">2021</a>
-                     </li>
-                     <li>
-                       <a href="/metadata202" class="style2" id="duadua2">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga2">2023</a>
-                     </li>
-                   </ul>
-                </li>
-
-                <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan3" onclick="toggleList3()">Kompilasi Produk Administrasi Data Kependidikan Kabupaten Semarang</span>
-                   <ul class="list-group" id="list-kegiatan3">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu3">2021</a>
-                     </li>
-                     <li>
-                       <a href="/metadata203" class="style2" id="duadua3">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga3">2023</a>
-                     </li>
-                   </ul>
-                </li>
-
-                <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan4" onclick="toggleList4()">Kompilasi Produk Administrasi Pegawai Negeri Sipil Pemerintah Kabupaten
-                    Semarang</span>
-                   <ul class="list-group" id="list-kegiatan4">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu4">2021</a>
-                     </li>
-                     <li>
-                       <a href="/metadata204" class="style2" id="duadua4">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga4">2023</a>
-                     </li>
-                   </ul>
-                </li>
-
-                <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan5" onclick="toggleList5()">Laporan Jumlah Pedagang Pasar</span>
-                   <ul class="list-group" id="list-kegiatan5">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu5">2021</a>
-                     </li>
-                     <li>
-                       <a href="/metadata205" class="style2" id="duadua5">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga5">2023</a>
-                     </li>
-                   </ul>
-                </li>
-
-                <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan6" onclick="toggleList6()">Laporan Keuangan Pemerintah Daerah</span>
-                   <ul class="list-group" id="list-kegiatan6">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu6">2021</a>
-                     </li>
-                     <li>
-                       <a href="/metadata206" class="style2" id="duadua6">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga6">2023</a>
-                     </li>
-                   </ul>
-                </li>
-
-                <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan7" onclick="toggleList7()">MONITORING EVALUASI DAN PELAPORAN KEBENCANAAN KABUPATEN
-                    SEMARANG</span>
-                   <ul class="list-group" id="list-kegiatan7">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu7">2021</a>
-                     </li>
-                     <li>
-                       <a href="/metadata207" class="style2" id="duadua7">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga7">2023</a>
-                     </li>
-                   </ul>
-                </li>
-
-                <li class="toc_list_group">
-                  <span class="style2" id="daftar-kegiatan8" onclick="toggleList8()">Pencacahan Lengkap Kunjungan Daya Tarik Wisata Kabupaten Semarang</span>
-                   <ul class="list-group" id="list-kegiatan8">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" id="duasatu8">2021</a>
-                     </li>
-                     <li>
-                       <a href="/metadata208" class="style2" id="duadua8">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="duatiga8">2023</a>
-                     </li>
-                   </ul>
-                </li>
-
-                {{-- TAMPILAN DEFAULT --}}
-                {{-- <li class="toc_list_group">
-                  <a href="#Heading1" class="style2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quibusdam eaque voluptate dolor deleniti eligendi mollitia eius similique, rerum, officiis atque minima, voluptates veniam iure nesciunt ullam laudantium corporis? Fugiat!</a>
-                   <ul class="list-group">
-                     <li class="sublist-group">
-                       <a href="#Heading1_2" class="style2" >2021</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="2022">2022</a>
-                     </li>
-                     <li>
-                       <a href="#Heading1_2" class="style2" id="2023">2023</a>
-                     </li>
-                   </ul>
-                </li> --}}
-                {{-- TAMPILAN DEFAULT END --}}
-
-
-
+                @endforeach
               </ul>
             </div>
           </div>
@@ -356,5 +252,22 @@
       </div>
     </div>
         <script src="{{ asset('js/script.js') }}"></script>
+        @foreach($kegiatans as $kegiatan)
+        <script>
+                function toggleList{{ $kegiatan->id }}() {
+            // Dapatkan elemen list
+                var listKegiatan{{ $kegiatan->id }} = document.getElementById('list-kegiatan{{ $kegiatan->id }}');
+
+                // Periksa apakah list sedang ditampilkan atau sembunyi
+                if (listKegiatan{{ $kegiatan->id }}.style.display === 'none') {
+                    // Jika sedang sembunyi, tampilkan
+                    listKegiatan{{ $kegiatan->id }}.style.display = 'block';
+                } else {
+                    // Jika sedang ditampilkan, sembunyikan
+                    listKegiatan{{ $kegiatan->id }}.style.display = 'none';
+                }
+            }
+        </script>
+        @endforeach
   </body>
 </html>
