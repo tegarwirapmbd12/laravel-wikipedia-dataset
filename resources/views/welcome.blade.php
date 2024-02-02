@@ -66,68 +66,156 @@
 
           <div id="my_toc_container">
             <div id="toc_container">
-              <div class="toc_title">Contents</div>
+              <div class="toc_title">Kegiatan</div>
               <ul class="toc_list">
                 <li class="toc_list_group">
-                  <span class="toc_number">1 </span><a href="#Heading1" class="style2">Life and career</a>
-                   <ul  class="sub_list">
-                     <li class="sub_list_group">
-                       <span class="toc_number">1.1 </span><a href="#Heading1_1" class="style2">1920-1925: Early life and career Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga dolorem illum laudantium facilis! Eum, dolorem expedita esse voluptatibus omnis, et ab unde enim, corrupti nisi quam amet impedit quidem!</a>
+                  <span class="style2" id="daftar-kegiatan" onclick="toggleList()">Jumlah Kejadian Penegakan Perda, Ketertiban Umum, dan Pemadam Kebakaran di Kabupaten Semarang</span>
+                   <ul class="list-group" id="list-kegiatan">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu">2021</a>
                      </li>
                      <li>
-                       <span class="toc_number">1.2 </span><a href="#Heading1_2" class="style2">1926-1931: Early development</a>
+                       <a href="/metadata201" class="style2" id="duadua">2022</a>
                      </li>
                      <li>
-                       <span class="toc_number">1.3 </span><a href="#Heading1_3" class="style2">1936-1941: Developmental path</a>
-                     </li>
-                     <li>
-                       <span class="toc_number">1.4 </span><a href="#Heading1_4" class="style2">1946-1951: Adulthood</a>
+                       <a href="#Heading1_2" class="style2" id="duatiga">2023</a>
                      </li>
                    </ul>
                 </li>
-                <li>
-                  <span class="toc_number">2 </span><a href="#Heading2" class="style2">Education</a>
-                  <ul>
-                    <li>
-                      <span class="toc_number">2.1</span><a href="#Heading2_1" class="style2">Training</a>
-                    </li>
-                    <li>
-                      <span class="toc_number">2.2</span><a href="#Heading2_2" class="style2">Experiences</a>
-                    </li>
-                    <li>
-                      <span class="toc_number">2.3</span><a href="#Heading2_3" class="style2">Work</a>
-                    </li>
-                    <li>
-                      <span class="toc_number">2.4</span><a href="#Heading2_4" class="style2">Videosand photos</a>
-                    </li>
-                  </ul>
-               </li>
-               <li>
-                 <span class="toc_number">3 </span><a href="#Heading3" class="style2">Achievements</a>
-               </li>
-               <li>
-                 <span class="toc_number">4 </span><a href="#Heading4" class="style2">Photography</a>
-               </li>
-               <li>
-                 <span class="toc_number">5 </span><a href="#Heading5" class="style2">Filmography</a>
-               </li>
-               <li>
-                 <span class="toc_number">6 </span><a href="#Heading6" class="style2">Friends</a>
-                 <ul>
-                   <li>
-                     <span class="toc_number">6.1</span><a href="#Heading6_1" class="style2">Visits</a>
-                   </li>
-                   <li>
-                     <span class="toc_number">6.2</span><a href="#Heading6_2" class="style2">Residencies</a>
-                   </li>
-                 </ul>
-               </li>
+
+
+                <li class="toc_list_group">
+                  <span class="style2" id="daftar-kegiatan2" onclick="toggleList2()">Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern</span>
+                   <ul class="list-group" id="list-kegiatan2">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu2">2021</a>
+                     </li>
+                     <li>
+                       <a href="/metadata202" class="style2" id="duadua2">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="duatiga2">2023</a>
+                     </li>
+                   </ul>
+                </li>
+
+                <li class="toc_list_group">
+                  <span class="style2" id="daftar-kegiatan3" onclick="toggleList3()">Kompilasi Produk Administrasi Data Kependidikan Kabupaten Semarang</span>
+                   <ul class="list-group" id="list-kegiatan3">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu3">2021</a>
+                     </li>
+                     <li>
+                       <a href="/metadata203" class="style2" id="duadua3">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="duatiga3">2023</a>
+                     </li>
+                   </ul>
+                </li>
+
+                <li class="toc_list_group">
+                  <span class="style2" id="daftar-kegiatan4" onclick="toggleList4()">Kompilasi Produk Administrasi Pegawai Negeri Sipil Pemerintah Kabupaten
+                    Semarang</span>
+                   <ul class="list-group" id="list-kegiatan4">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu4">2021</a>
+                     </li>
+                     <li>
+                       <a href="/metadata204" class="style2" id="duadua4">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="duatiga4">2023</a>
+                     </li>
+                   </ul>
+                </li>
+
+                <li class="toc_list_group">
+                  <span class="style2" id="daftar-kegiatan5" onclick="toggleList5()">Laporan Jumlah Pedagang Pasar</span>
+                   <ul class="list-group" id="list-kegiatan5">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu5">2021</a>
+                     </li>
+                     <li>
+                       <a href="/metadata205" class="style2" id="duadua5">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="duatiga5">2023</a>
+                     </li>
+                   </ul>
+                </li>
+
+                <li class="toc_list_group">
+                  <span class="style2" id="daftar-kegiatan6" onclick="toggleList6()">Laporan Keuangan Pemerintah Daerah</span>
+                   <ul class="list-group" id="list-kegiatan6">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu6">2021</a>
+                     </li>
+                     <li>
+                       <a href="/metadata206" class="style2" id="duadua6">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="duatiga6">2023</a>
+                     </li>
+                   </ul>
+                </li>
+
+                <li class="toc_list_group">
+                  <span class="style2" id="daftar-kegiatan7" onclick="toggleList7()">MONITORING EVALUASI DAN PELAPORAN KEBENCANAAN KABUPATEN
+                    SEMARANG</span>
+                   <ul class="list-group" id="list-kegiatan7">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu7">2021</a>
+                     </li>
+                     <li>
+                       <a href="/metadata207" class="style2" id="duadua7">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="duatiga7">2023</a>
+                     </li>
+                   </ul>
+                </li>
+
+                <li class="toc_list_group">
+                  <span class="style2" id="daftar-kegiatan8" onclick="toggleList8()">Pencacahan Lengkap Kunjungan Daya Tarik Wisata Kabupaten Semarang</span>
+                   <ul class="list-group" id="list-kegiatan8">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" id="duasatu8">2021</a>
+                     </li>
+                     <li>
+                       <a href="/metadata208" class="style2" id="duadua8">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="duatiga8">2023</a>
+                     </li>
+                   </ul>
+                </li>
+
+                {{-- TAMPILAN DEFAULT --}}
+                {{-- <li class="toc_list_group">
+                  <a href="#Heading1" class="style2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quibusdam eaque voluptate dolor deleniti eligendi mollitia eius similique, rerum, officiis atque minima, voluptates veniam iure nesciunt ullam laudantium corporis? Fugiat!</a>
+                   <ul class="list-group">
+                     <li class="sublist-group">
+                       <a href="#Heading1_2" class="style2" >2021</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="2022">2022</a>
+                     </li>
+                     <li>
+                       <a href="#Heading1_2" class="style2" id="2023">2023</a>
+                     </li>
+                   </ul>
+                </li> --}}
+                {{-- TAMPILAN DEFAULT END --}}
+
+
+
               </ul>
             </div>
           </div>
 
 
-          <div id="my_Heading1">
+          {{-- <div id="my_Heading1">
             <h2 id="Heading1">Life and career</h2>
           </div>
           <hr id="Line1">
@@ -237,79 +325,12 @@
             </span>
             <span id="my_jimdel20"><strong>•</strong></span>
             <span id="my_jimdel21"><a href="https://www.youtube.com/channel/UCiC5-n85_UzJs7C1FvFl-fg/videos" target="_blank">Jimdel-Edu</a><br></span>
-          </div>
+          </div> --}}
       </div>
-      <div class="col-3">
-        <div class="col-3-padding">
-          <table id="Table1">
-            <tr>
-              <td colspan="2" class="cell0"><p id="my_jimdel22"><span id="my_jimdel23">Jimdelpedia</span></p></td>
-            </tr>
-            <tr>
-              <td colspan="2" class="cell1"><div id="my_indexImage1">
-                <img src="{{ asset('images/logo-diskominfo.png') }}" id="indexImage1" alt="">
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p> <span id="my_jimdel24">Born</span></p>
-              </td>
-              <td class="cell2"><p>Jimdelpedia</p>
-                <p>October 1, 1950 (age 72)</p>
-                <p>Lasemence PHP, U.S.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p> <span id="my_jimdel25">Occupation</span></p>
-              </td>
-              <td class="cell2"><p>Cinematography - Software developer - martial artist</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p id="my_jimdel26"><span id="my_jimdel27"> </span>Spouse(s)</p>
-              </td>
-              <td class="cell2"><p>La Une. <br>Blue.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p id="my_jimdel28"><span id="my_jimdel29"> </span>Coworker(s)</p>
-              </td>
-              <td class="cell2"><p>John</p>
-                <p>(1970-present)</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p> <span id="my_jimdel30">Children</span></p>
-              </td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td class="cell2"><p> <span id="my_jimdel30">Acadamy Awards</span></p>
-              </td>
-              <td class="cell2"><p><a href="#Heading3" class="style2">Table</a></p>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p> <span id="my_jimdel31">Genres</span></p>
-              </td>
-              <td class="cell2"><p>Martial art - Action Movies</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p> <span id="my_jimdel31">Instruments</span></p>
-              </td>
-              <td class="cell2"><p>Guitar - Piano</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="cell2"><p> <span id="my_jimdel32">Website</span></p>
-              </td>
-              <td class="cell2"><p><a href="https://www.jdmah.com" target="_blank" class="style2">www.jimdelpedia.com</a></p>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
+
+      @include('layouts.profil')
+
+
       </div>
     </div>
     <div id="my_footer">

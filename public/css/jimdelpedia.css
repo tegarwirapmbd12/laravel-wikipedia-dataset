@@ -4242,3 +4242,201 @@ body{
     position: absolute;
     left: 0;
 }
+
+
+#toc_container ul {
+
+    padding: 0;
+    margin: 0;
+}
+
+/* Gaya daftar dengan bullet */
+#toc_container ul {
+    position: relative;
+    padding-left: 20px; /* Jarak antara bullet dan teks */
+}
+
+
+#toc_container li::before {
+     /* Karakter bullet (titik hitam kecil) */
+    position: absolute;
+    left: 0;
+}
+.toc_list_group {
+    list-style: decimal; /* Mengatur list decimal pada elemen dengan kelas toc-list-group */
+}
+
+.sublist-group {
+    list-style-type: none; /* Menghilangkan list decimal pada elemen dengan kelas sublist-group */
+}
+#list-kegiatan  {
+    display: none;
+  }
+  #daftar-kegiatan {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu:hover {
+    text-decoration: underline;
+  }
+  #duadua:hover {
+    text-decoration: underline;
+  }
+  #duatiga:hover {
+    text-decoration: underline;
+  }
+
+
+#list-kegiatan2  {
+    display: none;
+  }
+  #daftar-kegiatan2 {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan2:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu2:hover {
+    text-decoration: underline;
+  }
+  #duadua2:hover {
+    text-decoration: underline;
+  }
+  #duatiga2:hover {
+    text-decoration: underline;
+  }
+#list-kegiatan3  {
+    display: none;
+  }
+  #daftar-kegiatan3 {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan3:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu3:hover {
+    text-decoration: underline;
+  }
+  #duadua3:hover {
+    text-decoration: underline;
+  }
+  #duatiga3:hover {
+    text-decoration: underline;
+  }
+
+#list-kegiatan4  {
+    display: none;
+  }
+  #daftar-kegiatan4 {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan4:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu4:hover {
+    text-decoration: underline;
+  }
+  #duadua4:hover {
+    text-decoration: underline;
+  }
+  #duatiga4:hover {
+    text-decoration: underline;
+  }
+#list-kegiatan5  {
+    display: none;
+  }
+  #daftar-kegiatan5 {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan5:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu5:hover {
+    text-decoration: underline;
+  }
+  #duadua5:hover {
+    text-decoration: underline;
+  }
+  #duatiga5:hover {
+    text-decoration: underline;
+  }
+#list-kegiatan6  {
+    display: none;
+  }
+  #daftar-kegiatan6 {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan6:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu6:hover {
+    text-decoration: underline;
+  }
+  #duadua6:hover {
+    text-decoration: underline;
+  }
+  #duatiga6:hover {
+    text-decoration: underline;
+  }
+#list-kegiatan7  {
+    display: none;
+  }
+  #daftar-kegiatan7 {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan7:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu7:hover {
+    text-decoration: underline;
+  }
+  #duadua7:hover {
+    text-decoration: underline;
+  }
+  #duatiga7:hover {
+    text-decoration: underline;
+  }
+#list-kegiatan8  {
+    display: none;
+  }
+  #daftar-kegiatan8 {
+    color: blue;
+    cursor: pointer
+  }
+
+  #daftar-kegiatan8:hover {
+    text-decoration: underline;
+  }
+
+  #duasatu8:hover {
+    text-decoration: underline;
+  }
+  #duadua8:hover {
+    text-decoration: underline;
+  }
+  #duatiga8:hover {
+    text-decoration: underline;
+  }

@@ -34,7 +34,7 @@
       {{-- 2021 END --}}
 
       {{-- 2022 --}}
-      <div id="my_sidebarText3">
+      {{-- <div id="my_sidebarText3">
         <span id="my_jimdel5"><strong>KEGIATAN</strong></span>
       </div>
       <div id="my_sidebarMenu3">
@@ -53,7 +53,7 @@
         <span><a href="/metadata2-22" class="style2" title="Kompilasi Pasangan Usia Subur (PUS) yang menggunakan alat kontrasepsi modern 2021">MONITORING EVALUASI DAN PELAPORAN KEBENCANAAN KABUPATEN SEMARANG 2021</a></span>
         <br>
 
-      </div>
+      </div> --}}
       {{-- 2022 END --}}
 
       {{-- 2023 --}}
